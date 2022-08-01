@@ -1,0 +1,16 @@
+/*
+ Localizable.strings
+ Amway
+
+ Copyright © 2022 Amway. All rights reserved.
+
+ */
+
+// MARK: - Common
+
+// MARK: - API & Internet Failure
+
+"API_ERROR_TITLE" = "出問題了.";
+"API_ERROR_SUBTITLE" = "再試一次";
+"INTERNET_ERROR_TITLE" = "您似乎處於離線狀態";
+"INTERNET_ERROR_SUBTITLE" = "連接到互聯網以訪問您的工作區。";

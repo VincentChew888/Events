@@ -1,0 +1,14 @@
+/* 
+ Localizable.strings
+ Amway
+ 
+ Created by Y Media Labs on 06/07/21.
+ 
+ */
+
+// MARK: - API & Internet Failure
+
+"API_ERROR_TITLE" = "Something went wrong.";
+"API_ERROR_SUBTITLE" = "Try Again";
+"INTERNET_ERROR_TITLE" = "It looks like you're offline";
+"INTERNET_ERROR_SUBTITLE" = "Connect to the internet to access your Workspace.";
