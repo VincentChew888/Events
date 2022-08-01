@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Connectivity Error View Controller-->
+        <scene sceneID="Y9c-eq-IXn">
+            <objects>
+                <viewController storyboardIdentifier="ConnectivityErrorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c7U-y8-Xvw" customClass="ConnectivityErrorViewController" customModule="Events" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8NO-AO-VpY">
+                        <rect key="frame" x="0.0" y="0.0" width="419" height="165"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0y-v0-4nm" customClass="ConnectivityErrorView" customModule="Events">
+                                <rect key="frame" x="0.0" y="44" width="419" height="121"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Be-dM-k6V"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="J0y-v0-4nm" secondAttribute="bottom" id="3Sb-Hq-9tQ"/>
+                            <constraint firstItem="J0y-v0-4nm" firstAttribute="top" secondItem="7Be-dM-k6V" secondAttribute="top" id="9HG-ZZ-IQU"/>
+                            <constraint firstItem="7Be-dM-k6V" firstAttribute="trailing" secondItem="J0y-v0-4nm" secondAttribute="trailing" id="QsT-t8-U9Y"/>
+                            <constraint firstItem="J0y-v0-4nm" firstAttribute="leading" secondItem="7Be-dM-k6V" secondAttribute="leading" id="u49-uh-epv"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="419" height="165"/>
+                    <connections>
+                        <outlet property="connectivityErrorView" destination="J0y-v0-4nm" id="C7w-5Z-LxQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ulr-2B-Blu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183.33333333333334" y="-460.37946428571428"/>
+        </scene>
+    </scenes>
+</document>

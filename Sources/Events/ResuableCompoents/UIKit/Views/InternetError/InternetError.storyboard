@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Internet Error View Controller-->
+        <scene sceneID="Y1T-B0-jgh">
+            <objects>
+                <viewController storyboardIdentifier="InternetErrorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pDa-Vs-Djq" customClass="InternetErrorViewController" customModule="Events" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dAF-nf-IcG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="joE-hW-P8n" customClass="InternetErrorView" customModule="Events">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aUn-fN-gPO"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="joE-hW-P8n" firstAttribute="top" secondItem="aUn-fN-gPO" secondAttribute="top" id="Vla-bv-uTG"/>
+                            <constraint firstItem="joE-hW-P8n" firstAttribute="leading" secondItem="aUn-fN-gPO" secondAttribute="leading" id="WSf-mr-HoW"/>
+                            <constraint firstItem="aUn-fN-gPO" firstAttribute="trailing" secondItem="joE-hW-P8n" secondAttribute="trailing" id="u7x-as-07p"/>
+                            <constraint firstAttribute="bottom" secondItem="joE-hW-P8n" secondAttribute="bottom" id="zbd-DY-bwf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="internetErrorView" destination="joE-hW-P8n" id="UIA-4M-tbk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYk-YW-ugD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183.33333333333334" y="-460.37946428571428"/>
+        </scene>
+    </scenes>
+</document>

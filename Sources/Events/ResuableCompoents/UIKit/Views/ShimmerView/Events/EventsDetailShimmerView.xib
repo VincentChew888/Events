@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventsDetailShimmerView" customModule="Amway" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="1bU-uK-HUv" id="bvb-uT-w6o"/>
+                <outlet property="eventsStatusView" destination="49d-4M-gOZ" id="5zn-KV-NmL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUL-oC-Rm0">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bU-uK-HUv" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="729"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49d-4M-gOZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
+                                    <color key="backgroundColor" name="taiwan/gray4"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="375" id="dUk-aN-vdv"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4d-Lp-buP">
+                                    <rect key="frame" x="0.0" y="375" width="414" height="354"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="72" translatesAutoresizingMaskIntoConstraints="NO" id="nTa-62-pUC">
+                                            <rect key="frame" x="16" y="45" width="382" height="264"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="ktB-lR-2CD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="264"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0b-QK-DFu" customClass="ShimmerView" customModule="Events">
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="24"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="24" id="H4C-Mk-UPc"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="8"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWN-0x-87R" customClass="ShimmerView" customModule="Events">
+                                                            <rect key="frame" x="0.0" y="48" width="382" height="24"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="8"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWn-dL-sKG" customClass="ShimmerView" customModule="Events">
+                                                            <rect key="frame" x="0.0" y="96" width="382" height="24"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="8"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CwW-pk-B7n" customClass="ShimmerView" customModule="Events">
+                                                            <rect key="frame" x="0.0" y="144" width="382" height="24"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="8"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4S-VH-XMu" customClass="ShimmerView" customModule="Events">
+                                                            <rect key="frame" x="0.0" y="192" width="382" height="24"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="8"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCq-eW-JM0" customClass="ShimmerView" customModule="Events">
+                                                            <rect key="frame" x="0.0" y="240" width="382" height="24"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="8"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="taiwan/backgroundGray"/>
+                                    <constraints>
+                                        <constraint firstItem="nTa-62-pUC" firstAttribute="leading" secondItem="h4d-Lp-buP" secondAttribute="leading" constant="16" id="5LP-Bf-7cT"/>
+                                        <constraint firstAttribute="trailing" secondItem="nTa-62-pUC" secondAttribute="trailing" constant="16" id="KeM-hc-hBe"/>
+                                        <constraint firstItem="nTa-62-pUC" firstAttribute="top" secondItem="h4d-Lp-buP" secondAttribute="top" constant="45" id="rIN-XW-Cql"/>
+                                        <constraint firstAttribute="bottom" secondItem="nTa-62-pUC" secondAttribute="bottom" constant="45" id="wB3-00-5cV"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="49d-4M-gOZ" secondAttribute="trailing" id="8uF-6f-agp"/>
+                                <constraint firstItem="49d-4M-gOZ" firstAttribute="top" secondItem="1bU-uK-HUv" secondAttribute="top" id="V7d-Xy-qlf"/>
+                                <constraint firstAttribute="bottom" secondItem="h4d-Lp-buP" secondAttribute="bottom" id="cQz-MP-HYd"/>
+                                <constraint firstItem="h4d-Lp-buP" firstAttribute="top" secondItem="49d-4M-gOZ" secondAttribute="bottom" id="j8w-p0-JLc"/>
+                                <constraint firstItem="49d-4M-gOZ" firstAttribute="leading" secondItem="1bU-uK-HUv" secondAttribute="leading" id="jne-3m-QBU"/>
+                                <constraint firstItem="h4d-Lp-buP" firstAttribute="leading" secondItem="1bU-uK-HUv" secondAttribute="leading" id="lJq-Mk-jHs"/>
+                                <constraint firstAttribute="trailing" secondItem="h4d-Lp-buP" secondAttribute="trailing" id="zDr-Xx-3Va"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1bU-uK-HUv" firstAttribute="width" secondItem="aUL-oC-Rm0" secondAttribute="width" id="2iZ-CR-f91"/>
+                        <constraint firstAttribute="bottom" secondItem="1bU-uK-HUv" secondAttribute="bottom" id="3AN-TG-ZSO"/>
+                        <constraint firstItem="1bU-uK-HUv" firstAttribute="leading" secondItem="aUL-oC-Rm0" secondAttribute="leading" id="5Gg-yD-S8K"/>
+                        <constraint firstItem="1bU-uK-HUv" firstAttribute="top" secondItem="aUL-oC-Rm0" secondAttribute="top" id="MhX-nq-m0Z"/>
+                        <constraint firstAttribute="trailing" secondItem="1bU-uK-HUv" secondAttribute="trailing" id="Rjp-hl-9jb"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="4q6-H0-BBC"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="v8G-G1-1L9"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="taiwan/backgroundGray"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aUL-oC-Rm0" secondAttribute="bottom" id="5FE-YF-LgY"/>
+                <constraint firstItem="aUL-oC-Rm0" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="oNz-la-Vch"/>
+                <constraint firstItem="aUL-oC-Rm0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tMt-YJ-yPg"/>
+                <constraint firstItem="aUL-oC-Rm0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vRK-q5-m6w"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="52.901785714285715"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="taiwan/backgroundGray">
+            <color red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="taiwan/gray4">
+            <color red="0.58039215686274515" green="0.58039215686274515" blue="0.58039215686274515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

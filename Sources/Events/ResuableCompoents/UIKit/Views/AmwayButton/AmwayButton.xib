@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AmwayButton" customModule="Events">
+            <connections>
+                <outlet property="imageViewLeft" destination="Vah-Ix-2TT" id="kMq-rc-kcx"/>
+                <outlet property="imageViewRight" destination="ApJ-BC-cKA" id="a09-c8-q7s"/>
+                <outlet property="stackView" destination="u0F-xp-yDm" id="KV1-VX-TZY"/>
+                <outlet property="titleLabel" destination="Ool-1A-ZeT" id="b8N-jz-6sL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u0F-xp-yDm">
+                    <rect key="frame" x="16" y="23" width="382" height="16"/>
+                    <subviews>
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vah-Ix-2TT">
+                            <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="8Eo-Ty-NMm"/>
+                                <constraint firstAttribute="height" constant="16" id="aUb-rS-rhe"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ool-1A-ZeT">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ApJ-BC-cKA">
+                            <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="Qph-2c-9RS"/>
+                                <constraint firstAttribute="width" constant="16" id="pbp-44-BPe"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="u0F-xp-yDm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" priority="250" constant="16" id="DBo-xr-sR4"/>
+                <constraint firstAttribute="trailing" secondItem="u0F-xp-yDm" secondAttribute="trailing" priority="250" constant="16" id="LsP-hc-KGm"/>
+                <constraint firstItem="u0F-xp-yDm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OHb-hh-1ar"/>
+                <constraint firstItem="u0F-xp-yDm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uFq-NO-jG1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-42.857142857142854"/>
+        </view>
+    </objects>
+</document>
